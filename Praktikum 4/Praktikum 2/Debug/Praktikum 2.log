@@ -1,0 +1,15 @@
+﻿Der Buildvorgang wurde am 16.04.2014 17:12:43 gestartet.
+     1>Projekt "C:\Users\Alexander Wilms\Documents\Hochschule Darmstadt\2. Semester\Technische Informatik 2\Praktika\Praktikum 2\Praktikum 2\Praktikum 2.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\fraction.cpp
+         fraction.cpp
+     1>c:\users\alexander wilms\documents\hochschule darmstadt\2. semester\technische informatik 2\praktika\praktikum 2\fraction.cpp(48): error C2440: 'Initialisierung': 'Fraction *const ' kann nicht in 'Fraction' konvertiert werden
+                 Quelltyp konnte von keinem Konstruktor angenommen werden, oder die Überladungsauflösung des Konstruktors ist mehrdeutig
+     1>c:\users\alexander wilms\documents\hochschule darmstadt\2. semester\technische informatik 2\praktika\praktikum 2\fraction.cpp(64): error C2065: 'f2': nichtdeklarierter Bezeichner
+     1>c:\users\alexander wilms\documents\hochschule darmstadt\2. semester\technische informatik 2\praktika\praktikum 2\fraction.cpp(64): error C2228: Links von ".numerator" muss sich eine Klasse/Struktur/Union befinden.
+                 Typ ist ''unknown-type''
+     1>Die Erstellung des Projekts "C:\Users\Alexander Wilms\Documents\Hochschule Darmstadt\2. Semester\Technische Informatik 2\Praktika\Praktikum 2\Praktikum 2\Praktikum 2.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:00.49

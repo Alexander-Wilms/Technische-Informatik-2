@@ -1,0 +1,16 @@
+﻿Der Buildvorgang wurde am 06.07.2014 18:01:38 gestartet.
+     1>Projekt "C:\Users\Alexander Wilms\Documents\Hochschule Darmstadt\2. Semester\Technische Informatik 2\Praktika\Vector\Vector\Vector.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\alexander wilms\documents\hochschule darmstadt\2. semester\technische informatik 2\praktika\vector\vector\main.cpp(23): error C2552: 'v1': Initialisierung nicht zusammengesetzter Typen mit Initialisierungsliste ist nicht möglich
+                 'std::vector<_Ty>': Typen mit einer Basis sind nicht 'aggregate'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>Die Erstellung des Projekts "C:\Users\Alexander Wilms\Documents\Hochschule Darmstadt\2. Semester\Technische Informatik 2\Praktika\Vector\Vector\Vector.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:00.63
