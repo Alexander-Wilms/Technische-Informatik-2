@@ -1,6 +1,8 @@
 // PRAKTIKUM 3
+// g++ -std=c++0x main.cpp Mastermind.cpp Mastermind.h
 
 #include <iostream>
+#include <stdio.h>
 #include "Mastermind.h"
 using namespace std;
 
@@ -29,7 +31,7 @@ int main()
 void Play()
 {
 	MastermindDigits NumberToGuess;
-	
+
 	int givenNumberInt;
 	int counter = 0, i = 1;
 
@@ -37,7 +39,7 @@ void Play()
 	{
 		cout << i << ". Versuch; Gib Zahl: ";
 		cin >> givenNumberInt;
-		
+
 		if(givenNumberInt == -1)
 		{
 			cout << "Zahl: " << NumberToGuess.cheat() << std::endl;

@@ -1,18 +1,18 @@
 // PRAKTIKUM 3
 
 #include <iostream>
-#include <time.h>
+#include <stdlib.h>
 #include "Mastermind.h"
 
 MastermindDigits::MastermindDigits() // Standardkonstruktor
 {
 	digits = new int[4];
-	srand( unsigned int (time(NULL)) ); // Typecasting, da sich sonst der Compiler beschwert
+	srand( time(NULL) ); // Typecasting, da sich sonst der Compiler beschwert
 	makeDigitsToGuess();
 }
 
 MastermindDigits::MastermindDigits(int givenNumberInt)
-	
+
 {
 	digits = new int[4];
 	setDigits(givenNumberInt);
@@ -22,7 +22,7 @@ MastermindDigits::MastermindDigits(int givenNumberInt)
 		setDigits(givenNumberInt);
 	} else // Zufallszahl benutzen
 	{
-		srand( unsigned int (time(NULL)) ); // Typecasting, da sich sonst der Compiler beschwert
+		srand( time(NULL) ); // Typecasting, da sich sonst der Compiler beschwert
 		std::cout << "Zahl nicht zulaessig. Nehme Zufallszahl ";
 		for (int i = 0; i < 4; i++)
 		{
@@ -85,17 +85,17 @@ int MastermindDigits::locationWrong(const MastermindDigits& givenNumber)
 
 	for(i = 0; i < 4; i++)
 	{
-		actual[digits[i]-1]++; // Zählen, wie oft die Ziffern 1 bis 6 vorkommen
-	}
-	
-	for(i = 0; i < 4; i++)
-	{
-		given[givenNumber.digits[i]-1]++; // Zählen, wie oft die Ziffern 1 bis 6 vorkommen
+		actual[digits[i]-1]++; // ZÃ¤hlen, wie oft die Ziffern 1 bis 6 vorkommen
 	}
 
 	for(i = 0; i < 4; i++)
 	{
-		if (digits[i] == givenNumber.digits[i]) // Ziffern an der richtigen Stelle nicht mitzählen
+		given[givenNumber.digits[i]-1]++; // ZÃ¤hlen, wie oft die Ziffern 1 bis 6 vorkommen
+	}
+
+	for(i = 0; i < 4; i++)
+	{
+		if (digits[i] == givenNumber.digits[i]) // Ziffern an der richtigen Stelle nicht mitzÃ¤hlen
 		{
 			actual[digits[i]-1]--;
 			given[digits[i]-1]--;
@@ -120,7 +120,7 @@ bool MastermindDigits::isEqual(const MastermindDigits& givenNumber) // Checken, 
 		if (givenNumber.digits[i] != digits[i])
 		return false;
 	}
-	return true;	
+	return true;
 }
 
 int MastermindDigits::cheat()

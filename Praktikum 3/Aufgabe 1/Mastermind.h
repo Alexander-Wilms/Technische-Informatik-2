@@ -3,6 +3,7 @@
 #ifndef MASTERMIND_H
 #define MASTERMIND_H
 
+#include <iostream>
 class MastermindDigits
 {
 public:
